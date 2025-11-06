@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    /* ✅ پایه */
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+
+    /* ✅ برای React + Vite */
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* ✅ سخت‌گیری منطقی */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    /* ✅ مسیر خروجی */
+    "outDir": "./dist",
+
+    /* ✅ سایر تنظیمات */
+    "sourceMap": true,
+    "declaration": false,
+    "declarationMap": false,
+
+    /* 🚀 رفع هشدارهای نسخه 6 */
+    "ignoreDeprecations": "6.0"
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
