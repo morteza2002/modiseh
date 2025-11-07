@@ -31,6 +31,6 @@
     /* 🚀 رفع هشدارهای نسخه 6 */
     "ignoreDeprecations": "6.0"
   },
-  "include": ["src"],
+"include": ["src", "src/types/**/*.d.ts"],
   "exclude": ["node_modules"]
 }
