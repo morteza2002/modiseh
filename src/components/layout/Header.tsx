@@ -1,3 +1,4 @@
+import HeroSlider from "./HeroSlider";
 import Navbar from "./Navbar";
 
 export default function Header() {
@@ -12,6 +13,7 @@ export default function Header() {
 
        {/* نوبار سایت */}
        <Navbar />
+            <HeroSlider />
   
     </header>
   );
