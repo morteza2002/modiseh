@@ -1,7 +1,18 @@
+import Navbar from "./Navbar";
+
 export default function Header() {
   return (
-    <header className="bg-gray-800 text-white p-4">
-      <h1 className="text-xl font-bold">ModiShop</h1>
+    <header className="w-full">
+      {/* نوار تبلیغاتی بالا */}
+       <img
+        className="w-full md:object-cover object-fill h-13 md:h-20" 
+        src="/head-bg-info.gif"
+        alt="تبلیغات"
+      />
+
+       {/* نوبار سایت */}
+       <Navbar />
+  
     </header>
   );
 }
