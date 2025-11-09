@@ -1,6 +1,11 @@
+import HomeCategory from "../components/Home-layout/HomeCategory";
+import HeroSlider from "../components/layout/HeroSlider";
+
 const Home = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="">
+                  <HeroSlider />
+                  <HomeCategory />
       {/* Banner */}
       <section className="bg-gray-200 h-64 rounded-2xl flex items-center justify-center mb-10">
         <h2 className="text-3xl font-bold text-gray-700">خوش‌آمدید به M‍odishop 🛍️</h2>
