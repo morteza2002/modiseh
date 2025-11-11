@@ -1,4 +1,5 @@
 import HomeCategory from "../components/Home-layout/HomeCategory";
+import OfferGrid from "../components/Home-layout/OfferGrid";
 
 import HeroSlider from "../components/layout/HeroSlider";
 import ProductSlider from "../components/ProductComponents/ProductSlider";
@@ -20,8 +21,12 @@ const Home = () => {
       </section>
 
       {/* Products */}
-      <section className="container mx-auto px-4 py-8 ">
+      <section className="container mx-auto   ">
           <ProductSlider />
+      </section>
+
+      <section className="">
+           <OfferGrid />
       </section>
     </div>
   );

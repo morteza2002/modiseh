@@ -61,20 +61,10 @@ const products = [
 
 const ProductSlider = () => {
   return (
-    <div
-      className="mt-10 flex justify-center"
-      style={{
-        width: "100%",
-      }}
-    >
-      <div
-        className="w-[90%] sm:w-[95%] md:w-[90%] lg:w-[85%] xl:w-[80%]"
-        style={{
-          overflow: "hidden",
-        }}
-      >
+    <div className="mt-10 flex justify-center">
+      <div className="w-[92%] sm:w-[95%] md:w-[90%] lg:w-[85%] xl:w-[80%] overflow-hidden">
         <Swiper
-          slidesPerView={1}
+          slidesPerView={2}
           spaceBetween={10}
           navigation
           loop={true}
@@ -84,9 +74,9 @@ const ProductSlider = () => {
             padding: "10px 0 40px",
           }}
           breakpoints={{
-            0: { slidesPerView: 1, spaceBetween: 8 }, // برای موبایل کوچک
-            480: { slidesPerView: 1, spaceBetween: 8 },
-            640: { slidesPerView: 2, spaceBetween: 10 },
+            0: { slidesPerView: 2.2, spaceBetween: 6 }, // 👈 کارت‌ها جمع‌تر و با اسکرول طبیعی‌تر
+            480: { slidesPerView: 2.3, spaceBetween: 8 },
+            640: { slidesPerView: 2.5, spaceBetween: 10 },
             768: { slidesPerView: 3, spaceBetween: 10 },
             1024: { slidesPerView: 4, spaceBetween: 12 },
             1440: { slidesPerView: 5, spaceBetween: 14 },
@@ -118,7 +108,7 @@ const ProductSlider = () => {
           ))}
         </Swiper>
 
-        {/* استایل ناوبری */}
+        {/* 🎨 استایل دکمه‌ها و نسخه موبایل */}
         <style>{`
           .swiper-button-prev,
           .swiper-button-next {
@@ -147,15 +137,28 @@ const ProductSlider = () => {
             right: 2px;
           }
 
+          /* 🔹 نسخه موبایل */
           @media (max-width: 640px) {
             .swiper-button-prev,
             .swiper-button-next {
               width: 22px;
               height: 22px;
+              background: rgba(0, 0, 0, 0.3);
+              top: 35%;
             }
             .swiper-button-prev::after,
             .swiper-button-next::after {
-              font-size: 14px;
+              font-size: 13px;
+            }
+
+            /* 🔸 خود کارت‌ها فشرده‌تر */
+            .swiper-slide {
+              transform: scale(0.94);
+            }
+
+            /* 🔸 فاصله پایین کمتر */
+            .swiper {
+              padding-bottom: 20px !important;
             }
           }
         `}</style>
