@@ -1,6 +1,7 @@
 import HomeCategory from "../components/Home-layout/HomeCategory";
 import MiniBannerSlider from "../components/Home-layout/MiniBannerSliderHome";
 import OfferGrid from "../components/Home-layout/OfferGrid";
+import SelectedBrands from "../components/Home-layout/SelectedBrandsHome";
 
 import HeroSlider from "../components/layout/HeroSlider";
 import ManClothesSlider from "../components/ProductComponents/manProductSlider/ProductSliderWithSidebar-man";
@@ -39,6 +40,9 @@ const Home = () => {
       </section>
       <section>
         <MiniBannerSlider />
+      </section>
+      <section>
+        <SelectedBrands />
       </section>
     </div>
   );

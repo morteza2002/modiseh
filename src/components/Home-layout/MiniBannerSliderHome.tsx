@@ -2,13 +2,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import React from "react";
 
-const miniSlides = [
+const miniSlides: string[] = [
   "/miniSlider/PowerBank-Desktop_Size_1.jpg",
   "/miniSlider/Home_Kitchen_02-Desktop_Size.jpg",
 ];
 
-const MiniBannerSlider = () => {
+const MiniBannerSlider: React.FC = () => {
   return (
     <div className="relative w-full max-w-[1300px] mx-auto overflow-hidden rounded-2xl">
       <Swiper
@@ -24,7 +25,7 @@ const MiniBannerSlider = () => {
         }}
         className="miniSwiper"
       >
-        {miniSlides.map((img, index) => (
+        {miniSlides.map((img: string, index: number) => (
           <SwiperSlide key={index}>
             <img
               src={img}
