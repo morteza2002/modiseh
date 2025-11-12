@@ -1,8 +1,11 @@
 import HomeCategory from "../components/Home-layout/HomeCategory";
+import MiniBannerSlider from "../components/Home-layout/MiniBannerSliderHome";
 import OfferGrid from "../components/Home-layout/OfferGrid";
 
 import HeroSlider from "../components/layout/HeroSlider";
+import ManClothesSlider from "../components/ProductComponents/manProductSlider/ProductSliderWithSidebar-man";
 import ProductSlider from "../components/ProductComponents/ProductSlider";
+import WomenClothesSlider from "../components/ProductComponents/womanProductSlider/ProductSliderWithSidebar-woman";
 
 const Home = () => {
   return (
@@ -27,6 +30,15 @@ const Home = () => {
 
       <section className="">
            <OfferGrid />
+      </section>
+       <section className="">
+        <WomenClothesSlider />
+      </section>
+        <section className="">
+        <ManClothesSlider />
+      </section>
+      <section>
+        <MiniBannerSlider />
       </section>
     </div>
   );

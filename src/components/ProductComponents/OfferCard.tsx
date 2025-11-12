@@ -30,7 +30,7 @@ const OfferCard = () => {
   return (
     <div className="bg-[#C6284B] text-white rounded-2xl p-4 relative overflow-hidden flex flex-col items-center w-[180px] h-[290px]">
       <div className="absolute top-3 right-3 text-xs font-semibold cursor-pointer hover:underline">
-        مشاهده همه &lt;
+        مشاهده همه 
       </div>
 
       <div className="flex gap-2 mt-10">
