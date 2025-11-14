@@ -1,4 +1,7 @@
+import AdsOption from "../components/Home-layout/AdsOption";
 import HomeCategory from "../components/Home-layout/HomeCategory";
+import Homewarranty from "../components/Home-layout/Homewarranty";
+import MagazineSection from "../components/Home-layout/MagazineSection";
 import MiniBannerSlider from "../components/Home-layout/MiniBannerSliderHome";
 import OfferGrid from "../components/Home-layout/OfferGrid";
 import SelectedBrands from "../components/Home-layout/SelectedBrandsHome";
@@ -43,6 +46,15 @@ const Home = () => {
       </section>
       <section>
         <SelectedBrands />
+      </section>
+      <section>
+        <AdsOption/>
+      </section>
+      <section>
+        <MagazineSection />
+      </section>
+      <section>
+        <Homewarranty />
       </section>
     </div>
   );

@@ -6,7 +6,7 @@
 html,
 body,
 #root {
-  @apply min-h-screen bg-gray-100 text-gray-800 font-sans;
+  @apply min-h-screen  text-gray-800 font-sans;
   direction: rtl;
   text-align: right;
 }
